@@ -23,7 +23,9 @@ To do
     * docs for options: https://symfony.com/doc/current/reference/index.html
     * dumping options in console: php bin/console config:dump-reference
 * configure http://cs.sensiolabs.org/
-    continue from `general_phpdoc_annotation_remove`
+    * continue from `general_phpdoc_annotation_remove`
+    * https://hackernoon.com/how-to-configure-phpstorm-to-use-php-cs-fixer-1844991e521f
+* http://flexrecipes.org/recipes/popular
 
 Assets
 ---
