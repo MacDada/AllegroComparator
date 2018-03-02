@@ -40,7 +40,6 @@ To probably use
 To check out
 ---
 
-* https://symfony.com/doc/current/components/debug.html
 * https://symfony.com/doc/current/components/psr7.html
 * https://symfony.com/doc/current/components/phpunit_bridge.html
 * https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html
