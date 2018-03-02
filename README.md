@@ -1,7 +1,9 @@
 AllegroComparator
 ===
 
-Run the server: `php bin/console server:run`
+Run the server: `bin/console server:run`
+
+Fix code style violations: `vendor/bin/php-cs-fixer fix`
 
 ---
 
@@ -21,7 +23,7 @@ To do
     * docs for options: https://symfony.com/doc/current/reference/index.html
     * dumping options in console: php bin/console config:dump-reference
 * configure http://cs.sensiolabs.org/
-    * `php php-cs-fixer.phar fix -v src`
+    continue from `general_phpdoc_annotation_remove`
 
 Assets
 ---

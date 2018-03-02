@@ -1,8 +1,28 @@
 <?php
 
-return PhpCsFixer\Config::create()
-    ->setRules([
-        '@Symfony' => true,
-        'array_syntax' => ['syntax' => 'short'],
-    ])
-;
+declare(strict_types=1);
+
+return (function () {
+    $finder = PhpCsFixer\Finder::create()
+        ->in(__DIR__.'/src');
+
+    return PhpCsFixer\Config::create()
+        ->setRules([
+            // sure rules
+            '@PSR2' => true,
+            '@Symfony' => true,
+            '@Symfony:risky' => true,
+            'array_syntax' => ['syntax' => 'short'],
+            'backtick_to_shell_exec' => true,
+            'declare_strict_types' => true,
+
+            // not sure rules
+            //'align_multiline_comment' => ['comment_type' => 'all_multiline'],
+            //'strict_param' => true,
+            //'escape_implicit_backslashes'
+            //'explicit_indirect_variable'
+            //'explicit_string_variable'
+        ])
+        ->setRiskyAllowed(true)
+        ->setFinder($finder);
+})();
