@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\TemplateRenderer;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -20,6 +21,7 @@ class HomepageController
 
     /**
      * @Route("/")
+     * @Method("GET")
      */
     public function homepage(): Response
     {
