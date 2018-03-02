@@ -2,30 +2,27 @@
 
 namespace App\Controller;
 
+use App\TemplateRenderer;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class HomepageController
 {
     /**
-     * @return Response
-     *
+     * @var TemplateRenderer
+     */
+    private $renderer;
+
+    public function __construct(TemplateRenderer $renderer)
+    {
+        $this->renderer = $renderer;
+    }
+
+    /**
      * @Route("/")
      */
-    public function index()
+    public function homepage(): Response
     {
-        return new Response(trim('
-            <!DOCTYPE html>
-            <html lang="pl">
-                <head>
-                    <meta charset="utf-8" />
-                    <title>AllegroComparator</title>
-                </head>
-                <body>
-                    <h1>AllegroComparator</h1>
-                    <p>Hello World!</p>
-                </body>
-            </html>
-        '));
+        return new Response($this->renderer->render('homepage.html.twig'));
     }
 }
