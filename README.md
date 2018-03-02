@@ -42,8 +42,6 @@ To check out
 
 * https://symfony.com/doc/current/components/psr7.html
 * https://symfony.com/doc/current/components/phpunit_bridge.html
-* https://symfony.com/doc/current/bundles/SymfonyMakerBundle/index.html
-* https://symfony.com/doc/current/bundles/SensioGeneratorBundle/index.html
 * https://symfony.com/doc/current/bundles/NelmioApiDocBundle/index.html
 * https://symfony.com/doc/current/components/browser_kit.html
 * https://symfony.com/doc/current/components/cache.html
