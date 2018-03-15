@@ -16,6 +16,9 @@ Recompile assets automatically when files change:
 Compile assets + minifiy + optimize => for production:
 `yarn run encore production`
 
+Add yarn package:
+`yarn add PACKAGE_NAME --dev`
+
 Features
 ---
 
@@ -40,6 +43,7 @@ Features
 To do
 ---
 
+* remove greet encore module as soon as I have another one
 * configure packages
     * docs for options: https://symfony.com/doc/current/reference/index.html
     * dumping options in console: php bin/console config:dump-reference
