@@ -1,8 +1,17 @@
 {
   "name": "allegro-comparator",
-  "author": "Dawid Nowak <code@dnowak.pl>",
+  "author": {
+    "name": "Dawid Nowak",
+    "email": "allegro_comparator@dnowak.pl",
+    "url": "http://dnowak.pl"
+  },
+  "homepage": "https://github.com/MacDada/AllegroComparator",
   "license": "MIT",
+  "private": true,
   "devDependencies": {
-    "@symfony/webpack-encore": "^0.19.0"
+    "@symfony/webpack-encore": "^0.19.0",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.7",
+    "webpack-notifier": "^1.6.0"
   }
 }
