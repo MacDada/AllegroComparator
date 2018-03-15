@@ -1,4 +1,7 @@
 {
+  "name": "allegro-comparator",
+  "author": "Dawid Nowak <code@dnowak.pl>",
+  "license": "MIT",
   "devDependencies": {
     "@symfony/webpack-encore": "^0.19.0"
   }
