@@ -44,7 +44,6 @@ To do
 Assets
 ---
 
-* https://github.com/symfony/webpack-encore
 * https://webpack.js.org/
 * https://symfony.com/doc/current/frontend.html
 * https://symfony.com/doc/current/bundles/FOSJsRoutingBundle/index.html
