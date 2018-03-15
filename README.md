@@ -48,7 +48,6 @@ Assets
 * https://webpack.js.org/
 * https://symfony.com/doc/current/frontend.html
 * https://symfony.com/doc/current/bundles/FOSJsRoutingBundle/index.html
-* https://symfony.com/doc/current/components/asset.html
 
 To probably use
 ---
