@@ -40,6 +40,20 @@ Features
 * [ ] Refresh from Allegro
 * [ ] Comparison graph
 
+Tech stack
+---
+
+* [Symfony](https://symfony.com/):
+    * PHP framework
+* [Yarn](https://yarnpkg.com):
+    * JS package/dependency manager
+    * Published by Facebook
+    * Alternative for [npm](https://www.npmjs.com/)
+* [webpack](https://webpack.js.org/):
+    * JS build tool; module management
+    * Converting assets
+    * Alternative for [gulp](https://gulpjs.com/) and [Grunt](https://gruntjs.com/)
+
 To do
 ---
 
@@ -59,9 +73,24 @@ To do
 Assets
 ---
 
-* https://webpack.js.org/
-* https://symfony.com/doc/current/frontend.html
+* let's use jquery for now xd
 * https://symfony.com/doc/current/bundles/FOSJsRoutingBundle/index.html
+* babeljs
+    * https://babeljs.io/
+    * https://symfony.com/doc/current/frontend/encore/babel.html
+    * let's compile modern JS so it is compatibile with older browsers
+    * i'm pretty sure I want this
+    * it could already be installed, as I tested that for example `const` gets converted into `var` 
+* reactjs vs vuejs (I probably need to toss a coin xD)
+* sass vs less
+    * https://symfony.com/doc/current/frontend/encore/css-preprocessors.html
+    * probably better to use sass (although coin tossing might be useful ;p)
+* https://symfony.com/doc/current/frontend/encore/postcss.html
+* https://yarnpkg.com/en/docs
+* webpack
+    * https://webpack.js.org/guides/installation/
+    * https://webpack.js.org/concepts/
+    * https://github.com/webpack/webpack
 
 To probably use
 ---
@@ -74,3 +103,8 @@ To check out
 * https://symfony.com/doc/current/bundles/NelmioApiDocBundle/index.html
 * https://symfony.com/doc/current/components/browser_kit.html
 * https://symfony.com/doc/current/components/cache.html
+
+Other notes
+---
+
+* Escaping JS in Twig: https://symfony.com/doc/current/frontend/encore/server-data.html
