@@ -5,10 +5,30 @@ Run the server: `bin/console server:run`
 
 Fix code style violations: `vendor/bin/php-cs-fixer fix`
 
+Features
+---
+
+* [ ] Paste auctions list page link to make comparison of the auctions
+* [ ] Add more auctions to the comparison by pasting another auctions list page link
+* [ ] Add an auction to the comparison by adding its link
+* [ ] Remove (discard) auctions from the comparison
+* [ ] Parse auction features:
+    * [ ] Buy now price
+    * [ ] VAT invoice or not
+        * [ ] From the technical details box
+        * [ ] From the keywords in content
+* [ ] Allow manual override of the auction features
+* [ ] Notes for auctions
+* [ ] Adding custom features of auctions
+    * [ ] Boolean flags
+    * [ ] Numerical indexes
+* [ ] Sorting by features (multiple)
+* [ ] Refresh from Allegro
+* [ ] Comparison graph
+
 To do
 ---
 
-* plan the features ;p
 * configure packages
     * docs for options: https://symfony.com/doc/current/reference/index.html
     * dumping options in console: php bin/console config:dump-reference
