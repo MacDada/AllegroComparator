@@ -1,23 +1,18 @@
 AllegroComparator
 ===
 
-Run the server:
-`bin/console server:run`
-
-Fix code style violations:
-`vendor/bin/php-cs-fixer fix`
-
-Compile assets:
-`yarn run encore dev`
-
-Recompile assets automatically when files change:
-`yarn run encore dev --watch`
-
-Compile assets + minifiy + optimize => for production:
-`yarn run encore production`
-
-Add yarn package:
-`yarn add PACKAGE_NAME --dev`
+* Run the server:
+    `bin/console server:run`
+* Fix code style violations:
+    `vendor/bin/php-cs-fixer fix`
+* Compile assets:
+    `yarn run encore dev`
+* Recompile assets automatically when files change:
+    `yarn run encore dev --watch`
+* Compile assets + minifiy + optimize => for production:
+    `yarn run encore production`
+* Add yarn package:
+    `yarn add PACKAGE_NAME --dev`
 
 Features
 ---
