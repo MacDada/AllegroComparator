@@ -19,3 +19,7 @@
 /node_modules/
 /public/build/
 ###< symfony/webpack-encore-pack ###
+
+###> front-end tools ###
+/yarn-error.log
+###< front-end tools ###
