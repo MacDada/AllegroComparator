@@ -9,7 +9,8 @@ AllegroComparator
     `yarn run encore dev`
 * Recompile assets automatically when files change:
     `yarn run encore dev --watch`
-* Compile assets + minifiy + optimize => for production:
+* ~~Compile assets + minifiy + optimize => for production:~~
+    todo: needs to be configured properly
     `yarn run encore production`
 * Add yarn package:
     `yarn add PACKAGE_NAME --dev`
