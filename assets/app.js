@@ -3,12 +3,7 @@ import Vue from 'vue'
 
 require('./app.scss');
 
-const $ = require('jquery');
 const greet = require('./greet');
-
-$(document).ready(function () {
-    $('body').prepend('<h1>' + greet('john') + '</h1>');
-});
 
 // register the grid component
 Vue.component('demo-grid', {
