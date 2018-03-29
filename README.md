@@ -65,6 +65,7 @@ To do
     https://symfony.com/doc/current/best_practices/configuration.html#infrastructure-related-configuration
 * .env.dist for every var that should be defined
     https://symfony.com/doc/current/best_practices/configuration.html#canonical-parameters
+* `/favicon.ico` is `404 (Not Found)`
 
 Assets
 ---
