@@ -90,7 +90,7 @@
 
     th {
         background-color: #42b983;
-        color: rgba(255,255,255,0.66);
+        color: rgba(255, 255, 255, 0.66);
         cursor: pointer;
         user-select: none;
         text-transform: capitalize;
@@ -106,7 +106,7 @@
     }
 
     th.active {
-        color: #fff;
+        color: rgb(255, 255, 255);
     }
 
     th.asc::after {
