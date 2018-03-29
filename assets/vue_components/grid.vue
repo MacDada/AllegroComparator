@@ -6,7 +6,7 @@
                 v-for="key in columns"
                 @click="sortBy(key)"
                 :class="{
-                    active: sortKey == key,
+                    active: sortKey === key,
                     asc: sortOrders[key] > 0,
                     dsc: sortOrders[key] <= 0
                 }"
