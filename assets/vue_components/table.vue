@@ -47,7 +47,7 @@
         computed: {
             dataToShow: function () {
                 const sortColumn = this.sortColumn;
-                const filterKey = this.filterKey && this.filterKey.toLowerCase();
+                const filterKey = this.filterKey;
                 const order = this.sortOrders[sortColumn] || 1;
 
                 var data = this.data;
@@ -55,7 +55,7 @@
                 if (filterKey) {
                     data = data.filter(function (row) {
                         return Object.keys(row).some(function (key) {
-                            return String(row[key]).toLowerCase().indexOf(filterKey) > -1;
+                            return String(row[key]).toLowerCase().indexOf(filterKey.toLowerCase()) > -1;
                         });
                     })
                 }
