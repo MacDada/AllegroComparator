@@ -1,26 +1,26 @@
 <template>
     <table>
         <thead>
-        <tr>
-            <th
-                v-for="key in columns"
-                @click="sortBy(key)"
-                :class="{
-                    active: sortKey === key,
-                    asc: sortOrders[key] > 0,
-                    dsc: sortOrders[key] <= 0
-                }"
-            >
-                {{ key }}
-            </th>
-        </tr>
+            <tr>
+                <th
+                    v-for="key in columns"
+                    @click="sortBy(key)"
+                    :class="{
+                        active: sortKey === key,
+                        asc: sortOrders[key] > 0,
+                        dsc: sortOrders[key] <= 0
+                    }"
+                >
+                    {{ key }}
+                </th>
+            </tr>
         </thead>
         <tbody>
-        <tr v-for="entry in filteredData">
-            <td v-for="key in columns">
-                {{entry[key]}}
-            </td>
-        </tr>
+            <tr v-for="entry in filteredData">
+                <td v-for="key in columns">
+                    {{entry[key]}}
+                </td>
+            </tr>
         </tbody>
     </table>
 </template>
