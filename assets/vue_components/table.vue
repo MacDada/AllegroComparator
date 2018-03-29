@@ -92,9 +92,6 @@
         background-color: #42b983;
         color: rgba(255,255,255,0.66);
         cursor: pointer;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
         user-select: none;
         text-transform: capitalize;
     }
