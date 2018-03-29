@@ -5,13 +5,13 @@
             <th
                 v-for="key in columns"
                 @click="sortBy(key)"
-                :class="{ active: sortKey == key }"
+                :class="{
+                    active: sortKey == key,
+                    asc: sortOrders[key] > 0,
+                    dsc: sortOrders[key] <= 0
+                }"
             >
                 {{ key | capitalize }}
-                <span
-                    class="arrow"
-                    :class="sortOrders[key] > 0 ? 'asc' : 'dsc'"
-                />
             </th>
         </tr>
         </thead>
@@ -115,28 +115,11 @@
         color: #fff;
     }
 
-    th.active .arrow {
-        opacity: 1;
+    th.asc::after {
+        content: "↑";
     }
 
-    .arrow {
-        display: inline-block;
-        vertical-align: middle;
-        width: 0;
-        height: 0;
-        margin-left: 5px;
-        opacity: 0.66;
-    }
-
-    .arrow.asc {
-        border-left: 4px solid transparent;
-        border-right: 4px solid transparent;
-        border-bottom: 4px solid #fff;
-    }
-
-    .arrow.dsc {
-        border-left: 4px solid transparent;
-        border-right: 4px solid transparent;
-        border-top: 4px solid #fff;
+    th.dsc::after {
+        content: "↓";
     }
 </style>
