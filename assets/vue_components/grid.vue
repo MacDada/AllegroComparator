@@ -11,7 +11,7 @@
                     dsc: sortOrders[key] <= 0
                 }"
             >
-                {{ key|capitalize }}
+                {{ key }}
             </th>
         </tr>
         </thead>
@@ -72,11 +72,6 @@
                 return data;
             }
         },
-        filters: {
-            capitalize: function (str) {
-                return str.charAt(0).toUpperCase() + str.slice(1);
-            }
-        },
         methods: {
             sortBy: function (key) {
                 this.sortKey = key;
@@ -101,6 +96,7 @@
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        text-transform: capitalize;
     }
 
     td {
