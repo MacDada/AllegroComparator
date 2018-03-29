@@ -5,8 +5,6 @@ import Table from './vue_components/table.vue';
 
 require('./app.scss');
 
-const greet = require('./greet');
-
 new Vue({
     el: '#demo',
     data: {
