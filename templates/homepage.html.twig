@@ -9,12 +9,8 @@
         <h2>VueJS test</h2>
 
         <div id="demo">
-            <form id="search">
-                Search
-                <input
-                    name="query"
-                    v-model="searchQuery"
-                />
+            <form>
+                Search <input v-model="searchQuery" />
             </form>
             <grid
                 :data="gridData"
