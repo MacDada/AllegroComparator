@@ -8,17 +8,19 @@
     <article>
         <h2>VueJS test</h2>
 
-        <!-- demo root element -->
         <div id="demo">
             <form id="search">
-                Search <input name="query" v-model="searchQuery">
+                Search
+                <input
+                    name="query"
+                    v-model="searchQuery"
+                />
             </form>
             <grid
                 :data="gridData"
                 :columns="gridColumns"
-                :filter-key="searchQuery">
-            </grid>
+                :filter-key="searchQuery"
+            />
         </div>
     </article>
-
 {% endblock %}
