@@ -30,7 +30,7 @@
         props: {
             data: Array,
             columns: Array,
-            filterKey: String
+            search: String
         },
         data: function () {
             var sortOrders = {};
@@ -47,15 +47,15 @@
         computed: {
             dataToShow: function () {
                 const sortColumn = this.sortColumn;
-                const filterKey = this.filterKey;
+                const search = this.search;
                 const order = this.sortOrders[sortColumn] || 1;
 
                 var data = this.data;
 
-                if (filterKey) {
+                if (search) {
                     data = data.filter(function (row) {
                         return Object.keys(row).some(function (key) {
-                            return String(row[key]).toLowerCase().indexOf(filterKey.toLowerCase()) > -1;
+                            return String(row[key]).toLowerCase().indexOf(search.toLowerCase()) > -1;
                         });
                     })
                 }

@@ -8,12 +8,12 @@
 
         <div id="demo">
             <form>
-                Search <input v-model="searchQuery" />
+                Search <input v-model="search" />
             </form>
             <app-table
                 :data="data"
                 :columns="columns"
-                :filter-key="searchQuery"
+                :search="search"
             />
         </div>
     </article>

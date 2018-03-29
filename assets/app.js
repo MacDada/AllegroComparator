@@ -8,7 +8,7 @@ require('./app.scss');
 new Vue({
     el: '#demo',
     data: {
-        searchQuery: '',
+        search: '',
         columns: ['name', 'power'],
         data: [
             { name: 'Chuck Norris', power: Infinity },
@@ -17,5 +17,7 @@ new Vue({
             { name: 'Jet Li', power: 8000 }
         ]
     },
-    components: { AppTable: Table }
+    components: {
+        AppTable: Table
+    }
 });
