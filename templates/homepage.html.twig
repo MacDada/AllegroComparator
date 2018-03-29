@@ -10,9 +10,9 @@
             <form>
                 Search <input v-model="searchQuery" />
             </form>
-            <grid
-                :data="gridData"
-                :columns="gridColumns"
+            <app-table
+                :data="data"
+                :columns="columns"
                 :filter-key="searchQuery"
             />
         </div>
