@@ -3,22 +3,22 @@
         <thead>
             <tr>
                 <th
-                    v-for="key in columns"
-                    @click="sortBy(key)"
+                    v-for="column in columns"
+                    @click="sortBy(column)"
                     :class="{
-                        active: sortKey === key,
-                        asc: sortOrders[key] > 0,
-                        dsc: sortOrders[key] <= 0
+                        active: sortColumn === column,
+                        asc: sortOrders[column] > 0,
+                        dsc: sortOrders[column] <= 0
                     }"
                 >
-                    {{ key }}
+                    {{ column }}
                 </th>
             </tr>
         </thead>
         <tbody>
-            <tr v-for="entry in filteredData">
-                <td v-for="key in columns">
-                    {{entry[key]}}
+            <tr v-for="row in dataToShow">
+                <td v-for="column in columns">
+                    {{ row[column] }}
                 </td>
             </tr>
         </tbody>
@@ -35,20 +35,20 @@
         data: function () {
             var sortOrders = {};
 
-            this.columns.forEach(function (key) {
-                sortOrders[key] = 1;
+            this.columns.forEach(function (column) {
+                sortOrders[column] = 1;
             });
 
             return {
-                sortKey: '',
+                sortColumn: '',
                 sortOrders: sortOrders
             };
         },
         computed: {
-            filteredData: function () {
-                const sortKey = this.sortKey;
+            dataToShow: function () {
+                const sortColumn = this.sortColumn;
                 const filterKey = this.filterKey && this.filterKey.toLowerCase();
-                const order = this.sortOrders[sortKey] || 1;
+                const order = this.sortOrders[sortColumn] || 1;
 
                 var data = this.data;
 
@@ -60,10 +60,10 @@
                     })
                 }
 
-                if (sortKey) {
+                if (sortColumn) {
                     data = data.slice().sort(function (a, b) {
-                        a = a[sortKey];
-                        b = b[sortKey];
+                        a = a[sortColumn];
+                        b = b[sortColumn];
 
                         return (a === b ? 0 : a > b ? 1 : -1) * order;
                     });
@@ -73,9 +73,9 @@
             }
         },
         methods: {
-            sortBy: function (key) {
-                this.sortKey = key;
-                this.sortOrders[key] = this.sortOrders[key] * -1;
+            sortBy: function (column) {
+                this.sortColumn = column;
+                this.sortOrders[column] = this.sortOrders[column] * -1;
             }
         }
     };
